@@ -7,10 +7,6 @@ ENTRY_POINT = '<url>'
 API_PATH = '<path>'
 ID_STATION = '{id}'
 
-ENTRY_POINT = 'https://6g8wky14f2.execute-api.eu-west-3.amazonaws.com'
-API_PATH = '/tp-iot/lastx/'
-ID_STATION = 'rpi-001'
-
 def get_aws_data(start, stop):
     hstart = datetime.fromtimestamp(start, tz=timezone.utc).isoformat()
     hstop = datetime.fromtimestamp(stop, tz=timezone.utc).isoformat()
